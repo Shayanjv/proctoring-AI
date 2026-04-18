@@ -1,0 +1,61 @@
+# Environment files
+.env
+**/.env
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.pyre/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.vite/
+
+# Local databases and generated evidence
+*.db
+*.sqlite
+*.sqlite3
+**/local_evidence/
+**/logs/
+
+# Logs and temporary diagnostics
+*.log
+*.err.log
+*.out.log
+backend_logs.txt
+backend_error.log
+*_startup.*.log
+*_dev.*.log
+_dbg_line.txt
+_policy_snip.txt
+errors.json
+final_errors.txt
+pyright_errors.json
+pyright_filter_output.txt
+pyright_output.txt
+pyright_summary.txt
+eslint_output*.txt
+eslint_report.json
+
+# Editor and agent local state
+.cursor/
+.agent/
+.vscode/
+.idea/
+
+# OS and document lock files
+.DS_Store
+Thumbs.db
+~$*.docx
+
+# One-off local helper scripts
+fix_blocking.py
+parse_eslint.py
+patch_person_conf.py
